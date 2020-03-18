@@ -1,0 +1,55 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: fantasy, sans-serif;
+}
+
+header {
+    background-color: #232323;
+    width: 100%;
+}
+
+#headWrapperDiv {
+    width: 100%;
+    height: 80px;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 80px;
+}
+
+.NameTitleDiv {
+    float: left;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.NavClassDiv {
+    float: right;
+    line-height: 80px;
+}
+
+.headNavLink {
+    color: #FFFFFF;
+    padding-left: 40px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#headWrapperDiv::after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+#firstTitle {
+    color: #FFFFFF;
+}
+
+#secondTitle {
+    color: #F33F3F;
+}
