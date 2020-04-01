@@ -1,0 +1,128 @@
+#mainDiv {
+    background-color: black;
+}
+
+#carouselExampleIndicators {
+    width: 100%;
+    height: 800px;
+}
+
+.carousel-inner {
+    height: 100%;
+    background-color: #232323;
+}
+
+#carouselExampleIndicators .carousel-item {
+    height: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+#carouselExampleIndicators .carousel-item::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 10;
+}
+
+.carousel-item>img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 15;
+    height: 100%;
+}
+
+
+/* .carousel-item:nth-of-type(1) {
+    background-image: url("../images/alexandre-chambon-iRON0g6iO0k-unsplash.jpg");
+    background-size: cover;
+}
+
+.carousel-item:nth-of-type(2) {
+    background-image: url("../images/erik-mclean-rCCF1wC-c8M-unsplash.jpg");
+    background-size: cover;
+}
+
+.carousel-item:nth-of-type(3) {
+    background-image: url("../images/mattia-faloretti-jbrR_ESWK2A-unsplash.jpg");
+    background-size: cover;
+} */
+
+.carousel-item>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+}
+
+#headNavHomeId::after {
+    bottom: 0;
+    background-color: #F33F3F;
+}
+
+.indexContainer {
+    width: 100%;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
+
+#aboutTravelSite {
+    font-size: 28px;
+    font-weight: 400;
+    color: #1e1e1e;
+}
+
+#indexLeftTitle {
+    font-size: 17px;
+    color: #1a6692;
+    margin-bottom: 20px;
+}
+
+#indexLeftDesc {
+    font-size: 14px;
+    font-weight: 300;
+    color: #4a4a4a;
+    line-height: 24px;
+}
+
+#indexLeftList a {
+    font-size: 14px;
+    color: #4a4a4a;
+    font-weight: 300;
+    transition: all .3s;
+    padding-left: 13px;
+    text-decoration: none;
+}
+
+#indexLeftList a:hover {
+    color: #F33F3F;
+}
+
+.indexRightDiv>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 680px) {
+    #headNavHomeId::after {
+        bottom: 0;
+        background-color: transparent;
+    }
+    #headNavHomeId {
+        color: #F33F3F;
+    }
+    #carouselExampleIndicators {
+        height: 300px;
+    }
+}

@@ -28,16 +28,42 @@ header {
     font-weight: 800;
 }
 
+.NavClassDiv nav {
+    height: 100%;
+}
+
 .NavClassDiv {
     float: right;
     line-height: 80px;
+    height: 100%;
 }
 
 .headNavLink {
     color: #FFFFFF;
-    padding-left: 40px;
+    position: relative;
+    margin: 0 30px;
+    padding: 0 5px;
     font-size: 18px;
     text-decoration: none;
+    display: inline-block;
+    height: 100%;
+}
+
+.headNavLink::after {
+    width: 100%;
+    height: 3px;
+    content: ' ';
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    display: block;
+    background-color: transparent;
+    transition: all 400ms ease-in-out;
+}
+
+.headNavLink:hover::after {
+    bottom: 0;
+    background-color: #F33F3F;
 }
 
 #headWrapperDiv::after {
@@ -52,4 +78,103 @@ header {
 
 #secondTitle {
     color: #F33F3F;
+}
+
+.dropdownMenu {
+    float: right;
+    color: white;
+    margin: 0 20px;
+    font-size: 22px;
+    display: none;
+    cursor: pointer;
+}
+
+.firstLine {
+    color: #F33F3F;
+    font-size: 32px;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.secondLine {
+    color: #FFFFFF;
+    font-size: 62px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 680px) {
+    #headWrapperDiv .dropdownMenu {
+        display: block;
+    }
+    .NavClassDiv {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        transition: all 400ms linear;
+        height: auto;
+        max-height: 0px;
+        overflow: hidden;
+        z-index: 100;
+    }
+    .headNavLink {
+        color: black;
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        transition: all 400ms linear;
+    }
+    #headWrapperDiv {
+        position: relative;
+    }
+    .headNavLink:hover::after {
+        bottom: 0;
+        background-color: transparent;
+    }
+    .headNavLink:hover {
+        color: #F33F3F;
+    }
+    .firstLine {
+        font-size: 16px;
+    }
+    .secondLine {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .NameTitleDiv {
+        padding-left: 20px;
+    }
+}
+
+body nav a:hover {
+    color: #F33F3F;
+    text-decoration: none;
+}
+
+footer.footer {
+    background-color: #232323;
+    display: table;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 30px 30px;
+}
+
+footer p {
+    display: table-cell;
+    color: #FFFFFF;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    filter: invert(90%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }

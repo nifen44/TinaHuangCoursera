@@ -1,0 +1,109 @@
+#headNavAboutId::after {
+    bottom: 0;
+    background-color: #F33F3F;
+}
+
+#backImg {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+
+.backImgDiv {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+.backImgDiv>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#aboutUsHead {
+    font-size: 28px;
+    font-weight: 400;
+    color: #1e1e1e;
+    max-width: 1000px;
+    width: 100%;
+    margin: 60px 0;
+}
+
+.leftDiv>img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.leftDiv {
+    padding-right: 20px;
+}
+
+.rightDiv {
+    padding-left: 20px;
+}
+
+#aboutUsTitle {
+    font-size: 17px;
+    color: #1a6692;
+}
+
+#aboutUsDesc {
+    font-size: 14px;
+    font-weight: 300;
+    color: #4a4a4a;
+    line-height: 24px;
+}
+
+.socialList {
+    padding-left: 0;
+}
+
+.socialList>li {
+    list-style: none;
+    float: left;
+}
+
+.socialList a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    transition: all 400ms ease-in-out;
+    color: #121212;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.socialList i {
+    transform: translateY(5px);
+}
+
+.socialList a:hover {
+    background-color: #F33F3F;
+    color: #FFFFFF;
+}
+
+#headNavAboutId::after {
+    bottom: 0;
+    background-color: #F33F3F;
+}
+
+@media (max-width: 680px) {
+    #headNavAboutId::after {
+        bottom: 0;
+        background-color: transparent;
+    }
+    #headNavAboutId {
+        color: #F33F3F;
+    }
+}
